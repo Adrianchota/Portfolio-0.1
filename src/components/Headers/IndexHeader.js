@@ -24,7 +24,7 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter"  filter-color="blue">
+      <div className="page-header clear-filter" id="cumshot_section"  filter-color="blue">
         <div
           className="page-header-image"
           style={{
@@ -33,17 +33,11 @@ function IndexHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
-            {/* <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/now-logo.png")}
-            ></img> */}
-            {/* <h1 className="h1-seo">Hero Title.</h1>
-            <h3>A Hero description in the hero body</h3> */}
-            
+          <div className="content-center brand" style={{marginTop: 100}}>
+            <p className="pe">¡Hola, soy</p>
+            <h1 className="h1Tester">Adrian </h1>
+            <p className="pe">Y soy Ing. en Desarrollo de Software!</p>
           </div>
-          
         </Container>
       </div>
     </>

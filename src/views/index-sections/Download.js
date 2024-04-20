@@ -14,6 +14,15 @@ function Download() {
         id="download-section"
       >
         <Container>
+        <h1 className="h1selected">
+            <code>::Dónde puedes contactarme</code>
+          </h1>
+          <p style={{color: "white"}}>Si necesitas contactarme, estoy listo para responder a tus preguntas y trabajar juntos en lo que necesites.</p>
+          <blockquote>
+            <p>Si lo puedes imaginar, lo puedes PROGRAMAR.</p>
+            <a href="https://www.linkedin.com/in/adrian-sauceda-guzman-038910258/" style={{marginRight: 50}}>LinkedIn</a><a href="https://github.com/Adrianchota">GitHub</a>
+
+          </blockquote>
           {/* <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
               <h3 className="title">Do you love this Bootstrap 4 UI Kit?</h3>

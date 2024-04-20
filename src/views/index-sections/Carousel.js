@@ -15,20 +15,18 @@ import {
 
 const items = [
   {
-    src: require("assets/img/bg1.jpg"),
-    altText: "Nature, United States",
-    caption: "Nature, United States"
+    src: require("assets/img/landing.jpg"),
+   
   },
   {
-    src: require("assets/img/bg3.jpg"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States"
+    src: require("assets/img/EP1.PNG"), 
   },
   {
-    src: require("assets/img/bg4.jpg"),
-    altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States"
-  }
+    src: require("assets/img/UAG.PNG"), 
+  },
+  {
+    src: require("assets/img/law.PNG"), 
+  },
 ];
 
 function CarouselSection() {
@@ -56,13 +54,12 @@ function CarouselSection() {
   };
   return (
     <>
-      <div className="section" id="carousel">
+      <div className="section" id="carousel" >
         <Container>
           <div className="title">
-            <h4>Carousel</h4>
           </div>
           <Row className="justify-content-center">
-            <Col lg="8" md="12">
+            <Col lg="" md="8">
               <UncontrolledCarousel
                 activeIndex={activeIndex}
                 next={next}
@@ -78,10 +75,10 @@ function CarouselSection() {
                       onExited={onExited}
                       key={item.src}
                     >
-                      <img src={item.src} alt={item.altText} />
+                      {/* <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
                         <h5>{item.caption}</h5>
-                      </div>
+                      </div> */}
                     </CarouselItem>
                   );
                 })}               

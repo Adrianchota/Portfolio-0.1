@@ -14,6 +14,7 @@ import {
   InputGroupText,
   InputGroup,
   Container,
+  Col,
   Row
 } from "reactstrap";
 
@@ -30,12 +31,37 @@ function SignUp() {
         style={{
           backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")",
           backgroundSize: "cover",
-          backgroundPosition: "top center",
-          minHeight: "700px"
+       
+          minHeight: "700px",
+          marginTop: 300
         }}
       >
-        <Container>
-         
+        <Container className="justify-content-center" style={{}}>
+      
+          {/* <Row className="justify-content-center">
+            <Col>
+              <img style={{width:200, height: 200}} src={require("assets/img/csharp.png")}/>
+            </Col>
+            
+            <Col>
+              <img style={{width:200, height: 200}} src={require("assets/img/csharp.png")}/>
+            </Col>
+
+            <Col>
+              <img style={{width:200, height: 200}} src={require("assets/img/csharp.png")}/>
+            </Col>
+          </Row>
+
+          <Row style={{alignContent: "center"}} className="justify-content-center">
+            <Col>
+              <img style={{width:200, height: 200}} src={require("assets/img/csharp.png")}/>
+            </Col>
+            
+            <Col>
+              <img style={{width:200, height: 200}} src={require("assets/img/csharp.png")}/>
+            </Col>
+          </Row>
+           */}
         </Container>
       </div>
     </>

@@ -19,6 +19,7 @@ import {
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [iconOpacity, setIconOpacity] = React.useState("");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     const   updateNavbarColor = () => {
@@ -27,11 +28,13 @@ function IndexNavbar() {
         document.body.scrollTop > 399
       ) {
         setNavbarColor("");
+        setIconOpacity("")
       } else if (
         document.documentElement.scrollTop < 400 ||
         document.body.scrollTop < 400
       ) {
         setNavbarColor("navbar-transparent");
+        setIconOpacity("logo-transparent")
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -55,8 +58,20 @@ function IndexNavbar() {
           <div className="navbar-translate">
             <NavbarBrand
               id="navbar-brand"
+              
             >
-              AdrianLogo
+              <img
+              alt="..."
+              className={"n-logo " + iconOpacity}
+              style={{width: 50, height: 50, cursor: "pointer"}}
+              src={require("../../assets/img/codenegro.png")}
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("cumshot_section")
+                  .scrollIntoView();
+              }}
+              />
             </NavbarBrand>
             
             <button
@@ -85,7 +100,7 @@ function IndexNavbar() {
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("cumshot_section")
                       .scrollIntoView();
                   }}
                 >
@@ -98,7 +113,7 @@ function IndexNavbar() {
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("backshots_declared")
                       .scrollIntoView();
                   }}
                 >
@@ -160,7 +175,7 @@ function IndexNavbar() {
               </NavItem> */}
               <NavItem>
                 <NavLink
-                  href=""
+                  href="https://www.linkedin.com/in/adrian-sauceda-guzman-038910258/"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -173,7 +188,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href=""
+                  href="https://github.com/Adrianchota"
                   target="_blank"
                   id="facebook-tooltip"
                 >
