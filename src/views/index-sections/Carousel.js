@@ -85,7 +85,7 @@ function CarouselSection() {
                     </CarouselItem>
                   );
                 })}               
-              </UncontrolledCarousel>
+              </UncontrolledCarousel> 
             </Col>
           </Row>
         </Container>

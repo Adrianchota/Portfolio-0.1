@@ -24,7 +24,7 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter"  filter-color="blue">
         <div
           className="page-header-image"
           style={{
@@ -34,14 +34,16 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
+            {/* <img
               alt="..."
               className="n-logo"
               src={require("assets/img/now-logo.png")}
-            ></img>
-            <h1 className="h1-seo">Hero Title.</h1>
-            <h3>A Hero description in the hero body</h3>
+            ></img> */}
+            {/* <h1 className="h1-seo">Hero Title.</h1>
+            <h3>A Hero description in the hero body</h3> */}
+            
           </div>
+          
         </Container>
       </div>
     </>

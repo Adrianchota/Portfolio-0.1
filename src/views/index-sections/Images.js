@@ -13,7 +13,7 @@ function Images() {
           <Row>
             <Col md="12">
               <div className="hero-images-container">
-                <img
+                {/* <img
                   alt="..."
                   src={require("assets/img/hero-image-1.png")}
                 ></img>
@@ -28,7 +28,7 @@ function Images() {
                 <img
                   alt="..."
                   src={require("assets/img/hero-image-3.png")}
-                ></img>
+                ></img> */}
               </div>
             </Col>
           </Row>

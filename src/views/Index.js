@@ -43,8 +43,7 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
-       
+          <Images />      
   
           <Tabs />
           <Pagination />
